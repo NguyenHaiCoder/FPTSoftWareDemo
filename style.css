@@ -1,0 +1,301 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+#content-wrapper {
+    /* margin-bottom: 160px; Adjust the margin to accommodate the fixed footer */
+    padding-bottom: 100px;
+}
+#header{
+    background-color: rgb(202, 198, 198);
+    width: 100%;
+    height: 80px;
+    z-index: 2;
+}
+#logo-menu-container{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    display: flex;
+}
+
+#logo{
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    height: 80px;
+    margin-left: 50px;
+    margin-right: 0px;
+}
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 20px;
+    font-size: 18px;
+    color: black;
+}
+
+.menu-item {
+    margin-right: 15px; /* Khoảng cách giữa các mục menu */
+}
+
+.nav-top-link{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+
+.header-button-right{
+    display: flex;
+    justify-content: flex-end; /* Đặt nút sang bên phải */
+    width: 100%;
+}
+
+.nav-right-button{
+    text-decoration: none;
+    color: white;
+    background-color: #FF6600;
+    font-size: larger;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.nav-right-button:hover{
+    background-color: #45a049;
+}
+
+.backGround {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: -1;
+}
+
+.centered-text-1 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    height: 50px;
+    width: 260px;
+    font-size: 20px;
+}
+
+.centered-text-2{
+    position: absolute;
+    color: white;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, 55%);
+    text-align: center;
+    font-size: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    height: 80px;
+    font-weight: bold;
+}
+
+.centered-text-3{
+    position: absolute;
+    color: white;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, 300%);
+    text-align: center;
+    font-size: 16px;
+    background-color: #FF6600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.centered-text-3:hover{
+    background-color: #504a4a;
+}
+
+.centered-text-4 {
+    height: 23px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 1400%);
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 190%);
+    text-align: center;
+}
+.card-body {
+    width: 350px;
+    height: 390px;
+    padding: 0px;
+    margin: 0 20px; /* Điều chỉnh margin để làm cho các card cách nhau */
+    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+    box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+#card-tilte{
+    font-weight: bold;
+    font-size: 29px;
+}
+
+#card-midle{
+    color: black;
+    background-color: rgb(154,205,49);
+    height: 40px;
+    width: 310px;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px 10px;
+
+}
+
+#card-bottom {
+    height: 40px;
+    padding: 0;
+    width: 320px;
+    font-size: 18.3px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px 20px; /* Điều chỉnh margin nếu cần thiết */
+    text-align: center; /* Canh lề văn bản qua trái */
+}
+.card-body:hover {
+    transform: translateY(-10px);
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card-text {
+    margin: 10px 0;
+    transition: transform 0.3s ease;
+}
+
+.card-body:hover .card-text{
+    transform: translateY(-10px);
+}
+
+.form-container {
+    background-color: white;
+    height: 450px;
+    width: 400px;
+    border: 1px solid #ddd;
+    position: absolute;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 auto;
+    top: 210%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.header-of-form {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.layout-form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+label {
+    font-size: larger;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #ff6600;
+    border-radius: 8px;
+    width: auto;
+    height: auto;
+    font-size: large;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Optional: Style for required fields */
+input:required,
+textarea:required {
+    border-color: #dddddd; /* Red border for required fields */
+}
+
+footer{
+    background-color: #d3d3d3;
+    position: absolute;
+    top: 245%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: auto;
+    z-index: 5;
+    font-weight: bold;
+    font-size: larger;
+}

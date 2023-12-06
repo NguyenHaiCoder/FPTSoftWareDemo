@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FPTSOftWare</title>
+
+    <!-- Font Awesome giúp chèn các biểu tượng vào trang web -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header" class="header has-sticky">
+            <div id="logo-menu-container">
+                <!-- logo -->
+                <div id="logo" class="logo">
+                    <!-- header logo -->
+                    <a href="https://fsoft-academy.edu.vn/" title="FPT Software Academy">
+                        <img width="127" height="40" src="./fpt-logo.svg" alt="FPT Software Academy">
+                    </a>
+                </div>
+                <!-- menu -->
+                <ul class="header-nav">
+                    <li class="menu-item">
+                        <a href="https://fsoft-academy.edu.vn/" class="nav-top-link" target="_blank">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://fsoft-academy.edu.vn/gioi-thieu/" class="nav-top-link"
+                            target="_blank">About</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://fsoft-academy.edu.vn/dao-tao-mo-rong/" class="nav-top-link"
+                            target="_blank">Courses</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://fsoft-academy.edu.vn/tin-tuc-su-kien/" class="nav-top-link"
+                            target="_blank">Blog</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://fsoft-academy.edu.vn/lien-he/" class="nav-top-link" target="_blank">Contact</a>
+                    </li>
+                </ul>
+                <!-- right Element -->
+                <div class="header-button-right">
+                    <a href="https://fsoft-academy.edu.vn/tuyen-dung/" class="nav-right-button" target="_blank">Join
+                        Now</a>
+                </div>
+        </header>
+        <!-- introduc background -->
+        <div class="introduce-background">
+            <img src="./intro-background.jpeg" class="backGround">
+            <div class="centered-text-1">
+                <p>BEST ONLINE COURSES</p>
+            </div>
+            <div class="centered-text-2">
+                <p>Best Online Learning Platform</p>
+            </div>
+            <div class="centered-text-3" onclick="openNewPage('https://fsoft-academy.edu.vn/gioi-thieu/')">
+                <p>Learn More</p>
+            </div>
+            <script>
+                function openNewPage(url) {
+                    window.open(url, '_blank');
+                }
+            </script>
+        </div>
+
+        <p class="centered-text-4">Our Popular Courses</p>
+        <!-- three card -->
+        <div class="card">
+
+            <div class="card-body">
+                <img src="./java-course.webp" class="card-img" alt="...">
+                <p class="card-text" id="card-tilte">Full-Stack Java Wed for Beginner</p>
+                <p class="card-text" id="card-midle">46 sections - 716 lectures</p>
+                <p class="card-text" id="card-bottom">Learn Java server pages, servlets, and JSTL from the basics to
+                    advance
+                </p>
+            </div>
+
+
+            <div class="card-body">
+                <img src="./dotnet-course.webp" class="card-img" alt="...">
+                <p class="card-text" id="card-tilte">Full-Stack .Net Wed for Beginner</p>
+                <p class="card-text" id="card-midle">19 sections - 208 lectures</p>
+                <p class="card-text" id="card-bottom">Learn how to build an application from start to publishing with
+                    .Net
+                    Core</p>
+            </div>
+
+
+            <div class="card-body">
+                <img src="./react-course.png" class="card-img" alt="...">
+                <p class="card-text" id="card-tilte">Professional React Developer</p>
+                <p class="card-text" id="card-midle">46 sections - 716 lectures</p>
+                <p class="card-text" id="card-bottom">Build enterprise level React applications and deploy to production
+                    (using React 18!)</p>
+            </div>
+        </div>
+
+        <!-- form to submit -->
+        <div class="form-container">
+            <h2 class="header-of-form">Sign Up Now</h2>
+            <form action="#" method="post" class="layout-form">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name..." required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email..." required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <!-- footer in the bottom  -->
+    <footer>
+        <p>&copy; 2023 FPT Soft Ware</p>
+    </footer>
+
+</body>
+
+</html>
